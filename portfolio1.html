@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+    }
+    
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(45deg, #4B79A1, #283E51);
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #FFD700 !important;
+    }
+
+    /* Header Section */
+    #about {
+      background: linear-gradient(135deg, #283E51, #4B79A1);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .profile-pic {
+      max-width: 180px;
+      border-radius: 50%;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* Skills Section */
+    #skills {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+    .skill-card {
+      background: #4B79A1;
+      color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: #283E51;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #f1f1f1;
+      padding: 60px 20px;
+    }
+    .card {
+      border: none;
+      transition: box-shadow 0.3s;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card-title {
+      font-weight: bold;
+    }
+    .card-body {
+      text-align: center;
+    }
+    
+    /* Contact Section */
+    #contact {
+      background: #4B79A1;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    #contact a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #283E51;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="headshot.jpg" alt="Profile Photo" class="profile-pic">
+    <h2 class="section-heading">About Me</h2>
+    <p class="about-text">Hello! I’m Rohan D Chacko, a passionate web designer and developer. I create responsive, user-friendly websites and love working with Bootstrap.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container text-center">
+    <h2 class="section-heading">Skills</h2>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>HTML/CSS</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>JavaScript</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>Bootstrap</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>Python</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>C</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>Blender 3D</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>Unity 3D</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="skill-card">
+          <h4>Photoshop</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container text-center">
+    <h2 class="section-heading">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <!-- <img src="project1.jpg" class="card-img-top" alt="Project 1"> -->
+          <div class="card-body">
+            <h5 class="card-title">Tatvika Serenity</h5>
+            <p class="card-text">A VR game developed for Inclusys org in order to help elderly and neuro divergent individuals.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <!-- <img src="project2.jpg" class="card-img-top" alt="Project 2"> -->
+          <div class="card-body">
+            <h5 class="card-title">Video Summarization</h5>
+            <p class="card-text">Create summarized notes of videos in order to decrease the time spent on watching it.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <!-- <img src="project3.jpg" class="card-img-top" alt="Project 3"> -->
+          <div class="card-body">
+            <h5 class="card-title">Product Ad</h5>
+            <p class="card-text">Created an advertisement for an electronic product using 3D animation software.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-heading">Contact Me</h2>
+    <p>Email: <a href="mailto:rohandc2003@gmail.com">rohandc2003@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rohan-d-chacko">linkedin.com/in/rohan-d-chacko</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
